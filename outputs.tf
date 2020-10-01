@@ -14,7 +14,7 @@ output "connection_string" {
 }
 
 output "scp_copy_ovpm" {
-  description = "Will copy the ssh key to connect to VPN from the VPN server to the local current directory"
+  description = "Will copy the ssh key to connect to VPN from the remote VPN server to the local current directory"
   value = "'scp -i ${var.ssh_private_key_file} ${var.ec2_username}@${aws_instance.openvpn.public_dns}:${var.file_ovpn} .'"
 }
 
