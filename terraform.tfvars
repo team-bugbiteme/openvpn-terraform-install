@@ -2,7 +2,7 @@
 # AWS Settings
 ############### 
 
-region = "ap-southeast-2"
+region = "ap-southeast-1"
 
 shared_credentials_file = "/Users/leonlevy/.aws/credentials"
 
